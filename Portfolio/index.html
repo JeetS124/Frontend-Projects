@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Section -->
+        <nav id="navbar" class="navbar">
+            <ul class="nav-item">
+                <li class="nav-link"><a href="#featured">Works</a></li>
+                <li class="nav-link"><a href="#post-section">Blog</a></li>
+                <li class="nav-link"><a href="#footer">Contact</a></li>
+                <li class="nav-link menu">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Section -->
+    <section id="main-section" class="main-section">
+        <div class="text-container">
+            <h1 class="text-heading">Hi, I am John, Creative Technologist</h1>
+            <p>Amet minim mollit non deserunt ullamco eset sit aliqua dolo do amet sint. Velit consequat duis enim vlit
+                mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <button class="btn">Download Resume</button>
+        </div>
+        <div class="image-container">
+            <img class="profile-img" src="./Images/profile-img.png" alt="profile-image">
+        </div>
+    </section>
+    <!-- Recent Post Section -->
+    <section id="post-section" class="post-section">
+        <div class="post-container">
+            <div class="post-head">
+                <div class="recent-post-heading">Recent posts</div>
+                <a href="#" class="view-btn">View all</a>
+            </div>
+            <div class="post-card">
+                <div class="card-1">
+                    <h1>Making a design system from scratch</h1>
+                    <div class="card-subhead">
+                        <div class="date">12 Feb 2020</div>
+                        <div>|</div>
+                        <div class="card-design">Design, Pattern</div>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <div class="card-2">
+                    <h1>Creating pixel perfect icons in Figma</h1>
+                    <div class="card-subhead">
+                        <div class="date">12 Feb 2020</div>
+                        <div>|</div>
+                        <div class="card-design">Figma, Icon Design</div>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Section Styles -->
+    <section id="featured" class="featured-section">
+        <div class="featured-group">
+            <div class="featured-head">
+                Featured works
+            </div>
+            <div class="featured-container">
+                <div class="featured-row">
+                    <div class="">
+                        <img class="post-img" src="./Images/img-1.png" alt="">
+                    </div>
+                    <div class="post-content">
+                        <h1>Designing Dashboard</h1>
+                        <div class="fpost-date"><span>2020</span> Dashboard</span></spam>
+                        </div>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat
+                            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+                <div class="featured-row">
+                    <div class="">
+                        <img class="post-img" src="./Images/img-2.png" alt="">
+                    </div>
+                    <div class="post-content">
+                        <h1>Vibrant Portraits of 2020</h1>
+                        <div class="fpost-date"><span>2018</span>Illustration</span></spam>
+                        </div>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat
+                            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+                <div class="featured-row">
+                    <div class="">
+                        <img class="post-img" src="./Images/img-3.png " alt="">
+                    </div>
+                    <div class="post-content">
+                        <h1>36 Days of Malayalam type</h1>
+                        <div class="fpost-date"><span>2019</span>Typography</span></spam>
+                        </div>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat
+                            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="go-to"><a href="#navbar"><i class="fa fa-regular fa-arrow-up"></i></a></div>
+    <!-- Footer Section -->
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+            <div class="social-links">
+                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin-square"></i>
+            </div>
+            <div class="copyright">Copyright@2020 ALl rights reserved</div>
+        </div>
+    </footer>
+    <!-- JavaScript for Responsive Navbar -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className == "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+
+</html>
